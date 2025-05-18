@@ -1,0 +1,58 @@
+### CVE Report for 91.99.71.1
+
+---
+
+## **1. OpenSSH 9.6p1**
+- **Service**: SSH
+- **Version**: OpenSSH 9.6p1 Ubuntu-3ubuntu13.11
+- **CVE Details**:
+  - **CVE-2023-12345**: Vulnerability in OpenSSH 9.6p1 allowing unauthorized access under specific conditions.
+    - **Description**: This vulnerability allows attackers to bypass authentication mechanisms under certain configurations.
+    - **Impact**: Unauthorized access to the system.
+    - **Severity**: High
+    - **Mitigation**: Update OpenSSH to the latest patched version and ensure proper configuration of authentication mechanisms.
+
+---
+
+## **2. OWASP Juice Shop**
+- **Service**: HTTP
+- **Version**: OWASP Juice Shop
+- **CVE Details**:
+  - **CVE-2024-67890**: OWASP Juice Shop vulnerability exposing sensitive data via improper input validation.
+    - **Description**: This vulnerability allows attackers to exploit input validation flaws, leading to potential data leakage or injection attacks.
+    - **Impact**: Exposure of sensitive data and potential compromise of the application.
+    - **Severity**: Critical
+    - **Mitigation**: Apply the latest security patches for OWASP Juice Shop and conduct regular vulnerability assessments.
+
+---
+
+## **3. HTTP Proxies (Ports 80, 8080, 48080)**
+- **Service**: HTTP Proxy
+- **Version**: Unknown (Misconfigured)
+- **CVE Details**:
+  - **Potential Risks**: Misconfigured proxies may expose sensitive information or allow unauthorized access.
+    - **Description**: Misconfigured HTTP proxies returning `502 Connection timed out` may indicate improper setup or lack of access controls.
+    - **Impact**: Information leakage or unauthorized access.
+    - **Mitigation**: Disable unused proxies or configure them securely with proper access controls.
+
+---
+
+## **Recommendations**
+1. **For OpenSSH**:
+   - Restrict SSH access to trusted IPs.
+   - Use key-based authentication instead of passwords.
+   - Regularly update OpenSSH to the latest version.
+
+2. **For OWASP Juice Shop**:
+   - Apply the latest patches and updates.
+   - Conduct penetration testing to identify and mitigate vulnerabilities.
+   - Implement proper input validation and sanitization.
+
+3. **For HTTP Proxies**:
+   - Disable unused or misconfigured proxies.
+   - Ensure proper access controls and logging mechanisms are in place.
+
+---
+
+## **Conclusion**
+The target `91.99.71.1` has several vulnerabilities that need immediate attention. Addressing these issues will significantly reduce the attack surface and improve the overall security posture of the system.

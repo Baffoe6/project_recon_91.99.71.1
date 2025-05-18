@@ -1,0 +1,20 @@
+# Reconnaissance Report for 91.99.71.1
+
+---
+
+## **1. Introduction**
+This report documents the reconnaissance performed on the target `91.99.71.1`. The objective was to identify open ports, services, vulnerabilities, and potential attack surfaces using both active and passive reconnaissance techniques.
+
+---
+
+## **2. Methodology**
+
+### **Tools Used**
+- **Nmap**: For active scanning to identify open ports, services, and OS details.
+- **Shodan**: For passive reconnaissance to gather information about exposed services and misconfigurations.
+- **CVE Databases**: For vulnerability analysis (e.g., NVD, Exploit-DB).
+
+### **Steps Taken**
+1. Conducted an Nmap scan with the following command:
+   ```bash
+   nmap -A -T4 -oX nmap_results.xml 91.99.71.1
