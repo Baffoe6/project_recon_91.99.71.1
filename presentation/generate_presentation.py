@@ -8,7 +8,7 @@ slide = prs.slides.add_slide(prs.slide_layouts[0])
 title = slide.shapes.title
 subtitle = slide.placeholders[1]
 title.text = "Reconnaissance Report for 91.99.71.1"
-subtitle.text = "Active and Passive Reconnaissance Findings\nYour Name - May 2025"
+subtitle.text = "Active and Passive Reconnaissance Findings\nLord Kingsley Baffoe - 16 May 2025"
 
 # Slide 2: Objective
 slide = prs.slides.add_slide(prs.slide_layouts[1])
